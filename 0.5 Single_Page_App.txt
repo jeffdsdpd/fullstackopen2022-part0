@@ -1,0 +1,22 @@
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa 
+SERVER-->BROWSER : HTML CODE DOCUMENT
+
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+SERVER-->BROWSER : MAIN.CSS STYLESHEET FILE
+
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+SERVER-->BROWSER : SPA.JS JAVASCRIPT FILE
+
+
+note over browser:
+browser starts executing spa.js javascript code that requests JSON data from server 
+end note
+
+
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+SERVER-->BROWSER : JSON OBJECT
+
+
+note browser:
+browser executes the event handler that renders notes to display
+end note

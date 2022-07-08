@@ -1,0 +1,7 @@
+BROWSER (SPA.JS)—>SERVER : HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa 
+SERVER-->BROWSER : JSON OBJECT
+
+note:
+click ‘save’ button executes spa.js javascript code that sends field content and date to server then calls redrawNotes function to display new note
+end note
+

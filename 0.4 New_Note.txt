@@ -1,0 +1,25 @@
+BROWSER—>SERVER : HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note : note: "number+two"
+SERVER-->BROWSER : 302 REDIRECT
+
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+SERVER-->BROWSER : HTML CODE DOCUMENT
+
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+SERVER-->BROWSER : MAIN.CSS STYLESHEET FILE
+
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+SERVER-->BROWSER : MAIN.JS JAVASCRIPT FILE
+
+
+note over browser:
+browser starts executing main.js javascript code that requests JSON data from server 
+end note
+
+
+BROWSER—>SERVER : HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+SERVER-->BROWSER : JSON OBJECT
+
+
+note browser:
+browser executes the event handler that renders notes to display
+end note
